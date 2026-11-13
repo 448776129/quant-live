@@ -1,0 +1,54 @@
+{
+  "site_url": "https://448776129.github.io/quant-live/",
+  "timezone": "Asia/Shanghai",
+  "top_news_n": 20,
+  "news_feeds": [
+    {"name": "Yahoo Finance 美股", "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SPY,QQQ,NVDA,TSLA,AAPL&region=US&lang=en-US"},
+    {"name": "CNBC 市场", "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"},
+    {"name": "MarketWatch", "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"},
+    {"name": "WSJ 市场", "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"},
+    {"name": "Benzinga", "url": "https://www.benzinga.com/feed"}
+  ],
+  "ai": {
+    "model": "deepseek-chat",
+    "news_interval_min": 30,
+    "factor_interval_min": 60,
+    "news_batch_n": 10,
+    "max_output_tokens": 2500,
+    "timeout_sec": 90
+  },
+  "hot_keywords": {
+    "fed": 3, "rate cut": 4, "rate hike": 4, "fomc": 3, "inflation": 3, "cpi": 3, "ppi": 2,
+    "jobs": 2, "payroll": 3, "unemployment": 2, "gdp": 2, "recession": 4, "earnings": 3,
+    "ai": 3, "artificial intelligence": 3, "nvidia": 3, "openai": 2, "chips": 2, "semiconductor": 2,
+    "tesla": 2, "apple": 2, "microsoft": 2, "meta": 2, "amazon": 2, "google": 2,
+    "tariff": 4, "trade war": 4, "election": 2, "oil": 2, "crude": 2, "opec": 2,
+    "gold": 2, "bitcoin": 2, "crypto": 2, "rally": 2, "record high": 2, "sell-off": 3,
+    "crash": 4, "correction": 3, "downgrade": 3, "upgrade": 2, "merger": 2, "acquisition": 2,
+    "ipo": 2, "stock split": 2, "buyback": 2, "dividend": 2, "guidance": 3, "outlook": 2,
+    "china": 3, "trump": 3, "white house": 2, "treasury": 3, "yield": 2, "dollar": 2
+  },
+  "ticker_map": {
+    "nvidia": "NVDA", "tesla": "TSLA", "apple": "AAPL", "microsoft": "MSFT",
+    "amazon": "AMZN", "google": "GOOGL", "alphabet": "GOOGL", "meta": "META", "facebook": "META",
+    "amd": "AMD", "broadcom": "AVGO", "intel": "INTC", "netflix": "NFLX", "oracle": "ORCL",
+    "jpmorgan": "JPM", "jpm": "JPM", "goldman": "GS", "morgan stanley": "MS",
+    "bank of america": "BAC", "wells fargo": "WFC", "exxon": "XOM", "chevron": "CVX",
+    "walmart": "WMT", "costco": "COST", "disney": "DIS", "boeing": "BA", "caterpillar": "CAT",
+    "mcdonald": "MCD", "nike": "NKE", "coca-cola": "KO", "pepsi": "PEP", "starbucks": "SBUX",
+    "adobe": "ADBE", "salesforce": "CRM", "cisco": "CSCO", "qualcomm": "QCOM", "micron": "MU",
+    "unitedhealth": "UNH", "johnson": "JNJ", "pfizer": "PFE", "eli lilly": "LLY",
+    "oil": "XLE", "crude": "XLE", "opec": "XLE", "energy": "XLE",
+    "fed": "TLT", "fomc": "TLT", "rate": "TLT", "treasury": "TLT", "inflation": "TLT", "cpi": "TLT",
+    "bitcoin": "IBIT", "crypto": "IBIT", "gold": "GLD", "china": "FXI",
+    "sp500": "SPY", "s&p": "SPY", "nasdaq": "QQQ", "dow": "DIA", "semiconductor": "SMH",
+    "chips": "SMH", "ai": "XLK", "earnings": "SPY", "tariff": "SPY", "jobs": "SPY", "gdp": "SPY"
+  },
+  "news_impact": {
+    "atr_window": 60,
+    "min_atr_ratio": 1.5,
+    "lookback_days": 1,
+    "world_class_score": 4
+  },
+  "auto_tune": true
+}
