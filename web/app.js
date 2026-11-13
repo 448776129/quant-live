@@ -46,7 +46,7 @@
       badge.className = "badge badge-warn"; badge.textContent = "等待首次运行";
       return;
     }
-    const at = new Date(state.status.updated_at.replace(" ", "T") + ":00+08:00");
+    const at = new Date(state.status.updated_at.replace(" ", "T") + "+08:00");
     const ageMin = (Date.now() - at.getTime()) / 60000;
     const recent = state.status.last_runs || {};
     const anyOk = Object.values(recent).some((r) => r && r.ok);
